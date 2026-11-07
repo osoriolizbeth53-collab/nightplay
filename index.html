@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIGHTPLAY</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:#090710;color:white;
+ font-family:Arial,sans-serif;
+}
+header{
+ padding:20px 7%;display:flex;
+ justify-content:space-between;align-items:center;
+ border-bottom:1px solid #39204e;
+ flex-wrap:wrap;gap:15px;
+}
+.logo{font-size:25px;font-weight:bold;color:#c77dff}
+nav a{color:white;text-decoration:none;margin:8px}
+.hero{
+ text-align:center;padding:100px 20px;
+ background:radial-gradient(ellipse,#42175d,#090710 70%);
+}
+.hero h1{font-size:clamp(38px,8vw,72px)}
+.purple{color:#c77dff}
+.hero p{color:#d2c5df}
+button{
+ background:#994bd0;color:white;border:0;
+ padding:13px 22px;border-radius:8px;
+ cursor:pointer;font-size:15px;
+}
+section{padding:50px 8%}
+h2{color:#c77dff}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:20px;
+}
+.card{
+ background:#171121;padding:25px;
+ border:1px solid #49275f;border-radius:14px;
+}
+.card p{color:#c5b8d1;line-height:1.5}
+.emoji{font-size:35px}
+footer{
+ text-align:center;padding:30px;
+ border-top:1px solid #39204e;color:#a99bb5;
+}
+@media(max-width:500px){
+ header{justify-content:center}
+ nav{text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">☾ NIGHTPLAY</div>
+ <nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#videos">Entretenimiento</a>
+  <a href="#arte">Fotografía</a>
+ </nav>
+</header>
+
+<main>
+ <div class="hero" id="inicio">
+  <div class="emoji">🌙</div>
+  <h1>WELCOME TO <span class="purple">NIGHTPLAY</span></h1>
+  <p>Un universo de creatividad, arte y entretenimiento.</p>
+  <button onclick="document.getElementById('videos').scrollIntoView()">
+   EXPLORAR
+  </button>
+ </div>
+
+ <section id="videos">
+  <h2>🎬 Entretenimiento</h2>
+  <div class="grid">
+   <article class="card">
+    <div class="emoji">🎥</div>
+    <h3>Videos destacados</h3>
+    <p>Descubre proyectos audiovisuales y nuevas ideas.</p>
+   </article>
+   <article class="card">
+    <div class="emoji">✨</div>
+    <h3>Creatividad</h3>
+    <p>Un espacio para descubrir nuevos talentos.</p>
+   </article>
+  </div>
+ </section>
+
+ <section id="arte">
+  <h2>📸 Fotografía y arte</h2>
+  <div class="grid">
+   <article class="card">
+    <div class="emoji">📷</div>
+    <h3>Fotografía</h3>
+    <p>Galerías visuales y colecciones artísticas.</p>
+   </article>
+   <article class="card">
+    <div class="emoji">🎨</div>
+    <h3>Arte digital</h3>
+    <p>Ilustraciones, diseños y expresión creativa.</p>
+   </article>
+  </div>
+ </section>
+
+ <section>
+  <div class="card">
+   <h2>🌙 ¿Eres creador?</h2>
+   <p>NIGHTPLAY está preparando un espacio para recibir propuestas creativas y revisarlas antes de publicarlas.</p>
+   <p>Próximamente.</p>
+  </div>
+ </section>
+</main>
+
+<footer>
+ ☾ NIGHTPLAY · 2026
+ <p>Creatividad y entretenimiento</p>
+</footer>
+
+</body>
+</html>
